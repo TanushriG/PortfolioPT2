@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My portiolio.</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="Slideshow.css" />
+    <script src="slideshowcontrol.js">
+    </script>
+  </head>
+  <body>
+    <br>
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="text">Sushant Rajput</div>
+        <img src="./Images/Art1.jpg" style="width: 40%;height:30%" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/2.jpg" style="width: 40%;height:30%" />
+        <div class="text">Jim Parsons</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/3.jpg" style="width: 40%;height:30%" />
+        <div class="text">Sonu Nigam</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/4.jpg"style="width: 40%;height:30%" />
+        <div class="text">Saroj Khan</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/5.jpg" style="width: 40%;height:30%" />
+        <div class="text">Mr.Jagadish</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/6.jpg" style="width: 40%;height:30%" />
+        <div class="text">Kangna Ranaut</div>
+      </div>
+
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="7.jpg" style="width: 40%;height:30%" />
+        <div class="text">Sourav Ganguly</div>
+      </div>
+
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="8.jpg" style="width: 40%;height:30%" />
+        <div class="text">Parrot</div>
+      </div>
+
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="9.jpg" style="width: 40%;height:30%" />
+        <div class="text">Watch + Ink</div>
+      </div>
+
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="10.jpg" style="width: 40%;height:30%" />
+        <div class="text">Glass Utensils</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="11.jpg" style="width: 40%;height:30%" />
+        <div class="text">Rose</div>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+   
+        <div class="Description">
+          I'm Tanushri Goyal, an artist with experience in multiple mediums
+          including acrylic, oil pastel, and pencil. I am eager to build on my
+          artistic knowledge and continue creating beautiful pieces. Reach out to
+          tanushri.goyal.2009@gmail.com to connect.
+        </div>
+        <script>
+          let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+        </script>
+  </body>
+</html>

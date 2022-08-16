@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar-brand {
+  height: 40px;
+  padding-left: 30px;
+}
+.navbar-nav li {
+  padding: 0 10px;
+}
+.navbar-nav li a {
+  padding: 0 10px;
+  text-align: left;
+}
+#nav-bar ul li a:hover {
+  color: #007bff !important;
+}
+.navbar {
+  background-color: #fff;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.nav-link {
+  color: #555 !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+#slider{
+    width: 40%;
+    height: 10%;
+}
+.carousel-caption{
+    top: 10%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+.carousel-caption h5{
+    color: black;
+    font-size: 32px;
+}
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    text-align: center;
+}
+#about{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.about-content{
+    padding-top: 20px;
+    font-size: 18px;
+}
+#contact{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+.contact-form{
+    padding: 20px;
+}
+.form-control{
+    border-radius: 0 !important;
+    border: none !important;
+    text-align: left;
+}
+::placeholder{
+    color: #999 !important;
+    text-align: left;
+}
+.follow{
+    background:#Fff ;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+#shop{
+    text-align: center;
+}
+.contactme{
+  background-color: #333333;
+  display: flex;
+  justify-content: space-evenly;
+  padding:20px
+}

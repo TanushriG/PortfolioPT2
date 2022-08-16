@@ -1,0 +1,48 @@
+.Header{
+border-style: ridge;
+background-color: rgb(227, 128, 143);
+height: 1cm;
+font-size: 0.7cm;
+border-radius: 3cm;
+border-color: aqua;
+color: beige;
+}
+.Picture{
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size:  1cm;
+}
+.Topright{
+    position:absolute;
+    top:8px;
+    right:70px
+}
+img{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    display:block
+
+}
+body{
+    background-color: rgb(41, 168, 168);
+}
+.Description{
+    font-size: 0.8cm;
+    text-align: center;
+    color: white;
+}
+.A1{
+    margin-right: auto;
+    margin-left: auto;
+    display:block;
+    flex-basis: 40%
+}
+.Artwork{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+
+}
